@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and registration form desing</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+<div class="login-page">
+<div class="form">
+<form class="register-form">
+<input type="text"placeholder=" user name"/>
+<input type="text"placeholder="password"/>
+<input type="text"placeholder="email id"/>
+<button>create</button>
+<p class="messaje">already registered? <a href="#">login</a>
+</p>
+</form>
+
+<form class="login-form">
+<input type="text" placeholder = "username"/>
+<input type="password" placeholder = "password"/>
+<button>login</button>
+<p class="messaje">not registered? <a href="#">Register</a></p>
+</form>
+
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js">
+</script>
+
+<script>
+$('.message a').click(function(){
+$('form').animate({height:"toggle", opacity:"toggle"}, "slow");   
+});
+
+</script>
+
+    
+</body>
+</html>
